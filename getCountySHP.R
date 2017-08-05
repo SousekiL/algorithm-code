@@ -19,7 +19,7 @@ for (i in 1:dim(adcode.data)[1]) {
   adcode = adcode.data$adcode[i]
   
   url <- paste0("http://restapi.amap.com/v3/config/district?",
-                "key=29fff7960c355da1865995277d494bb9", 
+                "key=", AMAP_KEY,
                 "&keywords=", 
                 adcode, 
                 "&level=city&subdistrict=3&extensions=all")
